@@ -34,6 +34,21 @@ class UserController {
                 res: message
             });
         });
+        // This method was created to be used at CRUD method, it returns a response through the res param
+        this.validateUser = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            // There's logging the user and saving the response in two variables
+            const { successful: userLogged, message } = yield this.userService.validateUser(req.body.user);
+            // There's checking the result variable and sending the response
+            if (userLogged)
+                return res.status(200).json({
+                    status: 200,
+                    res: message
+                });
+            res.status(400).json({
+                status: 400,
+                res: message
+            });
+        });
     }
 }
 // There's exporting the controller

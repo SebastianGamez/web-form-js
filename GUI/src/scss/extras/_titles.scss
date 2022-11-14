@@ -1,0 +1,27 @@
+.legend-title--register{
+    font-size: 1rem;
+    font-family: $sans-pro;
+    color: $real-gray;
+    margin: 10px 0px;
+}
+
+.title-register, .title-login{
+    font-size: 2.4rem;
+    color: $real-white;
+    margin: 10px 0px;
+}
+
+.redirect-sentence{
+    font-size: 1rem;
+    font-family: $sans-pro;
+    color: $real-gray;
+    margin: 10px 0px;
+}
+
+.sentence-link{
+    color: $light-blue;
+    transition: 0.3s;
+    &:hover{
+       color: $real-blue;
+    }
+}

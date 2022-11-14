@@ -25,4 +25,5 @@ const UserModel = connection_1.default.define('User', {
         type: sequelize_1.DataTypes.STRING,
     }
 }, { timestamps: false });
+UserModel.sync();
 exports.default = UserModel;

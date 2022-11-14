@@ -8,10 +8,12 @@ const express_1 = __importDefault(require("express"));
 // There's importing the controller
 const userController_1 = __importDefault(require("../../controllers/userController"));
 // Getting the controller methods
-const { createUser } = new userController_1.default();
+const { createUser, validateUser } = new userController_1.default();
 // Separating the maps logic, creating a new route
 const userRoute = express_1.default.Router();
 // Implementing the controller method in a CRUD request, this request is created for save a new user
 userRoute.post('/register', createUser);
+// Implementing the controller method in a CRUD request, this request is created for login a new user
+userRoute.post('/login', validateUser);
 // Exporting the route
 exports.default = userRoute;

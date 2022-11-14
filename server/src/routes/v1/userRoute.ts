@@ -5,13 +5,16 @@ import express, { Router } from "express";
 import UserController from "../../controllers/userController";
 
 // Getting the controller methods
-const { createUser } = new UserController();
+const { createUser, validateUser } = new UserController();
 
 // Separating the maps logic, creating a new route
 const userRoute: Router = express.Router();
 
 // Implementing the controller method in a CRUD request, this request is created for save a new user
 userRoute.post('/register', createUser);
+
+// Implementing the controller method in a CRUD request, this request is created for login a new user
+userRoute.post('/login', validateUser);
 
 // Exporting the route
 export default userRoute;

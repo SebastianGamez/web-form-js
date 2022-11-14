@@ -26,6 +26,8 @@ const UserModel = db.define('User', {
 
 }, {timestamps: false});
 
+UserModel.sync();
+
 export default UserModel;
 
 

@@ -33,6 +33,28 @@ class UserController {
 
     }
 
+    // This method was created to be used at CRUD method, it returns a response through the res param
+    public validateUser = async(req: Request, res: Response) => {
+
+        // There's logging the user and saving the response in two variables
+        const {successful: userLogged, message}: ResType = await this.userService.validateUser(req.body.user);
+
+        // There's checking the result variable and sending the response
+        if(userLogged) return res.status(200).json({
+
+            status: 200,
+            res: message
+
+        });
+        res.status(400).json({
+
+            status: 400,
+            res: message
+
+        });
+
+    }
+
 }
 
 // There's exporting the controller

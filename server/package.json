@@ -4,7 +4,7 @@
   "description": "Technical JavaScript test api (backend)",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsc; node ./dist/index.js",
+    "start": "tsc; node ./dist/index.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon ./dist/index.js\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

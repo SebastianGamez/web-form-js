@@ -29,7 +29,7 @@ export const RegisterPage = () => {
 
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const { data }: {data: ResType} = await axios.post('http://webform-env.eba-hcwxcsrr.us-east-2.elasticbeanstalk.com/api/users/register', {user: form});
+    const { data }: {data: ResType} = await axios.post('https://webform-env.eba-hcwxcsrr.us-east-2.elasticbeanstalk.com/api/users/register', {user: form});
     if(data.res === 'User created successful'){
       swal('Success', data.res, 'success');
       setRegistered(true);

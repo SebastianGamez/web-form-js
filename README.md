@@ -4,9 +4,9 @@
 
 ## GUI (Frontend):
 
- ### La interfaz gŕafica consiste una página web SPA (Single Page Application) con dos pestañas implementadas con React Router -el login y el registro. El login consume un API previamente creada y valida la existencia del usario, exponiendo el resultado mediante una alerta personalizada. La pestaña de registro recibe información básica del usuario y cuenta con autocompletado en la entrada de nacionalidad; las naciones sugeridas se consumen de un API gratuito (https://restcountries.com/). El registro también muestra una alerta personalizada según el resultado.
+ ### La interfaz gŕafica consiste una página web SPA (Single Page Application) con dos pestañas implementadas con React Router -el login y el registro-. El login consume un API previamente creada y valida la existencia del usario, exponiendo el resultado mediante una alerta personalizada. La pestaña de registro recibe información básica del usuario y cuenta con autocompletado en la entrada de nacionalidad; las naciones sugeridas se consumen de un API gratuito (https://restcountries.com/). El registro también muestra una alerta personalizada según el resultado.
 
-### A continuación encontrara un enlace donde podrá probar la aplicación completa ya enlazada con el servidor:
+### A continuación encontrará un enlace donde podrá probar la aplicación completa ya enlazada con el servidor:
 ### Enlace al sitio desplegado: http://webformfront-env.eba-k2mv3bem.us-east-2.elasticbeanstalk.com
 
 

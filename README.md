@@ -15,7 +15,7 @@
 ### Peticiones que recibe el servidor:
 
   ### -POST /api/users/register
-  #### Esta petición se utilizara para registrará un nuevo usuario y debe enviar como cuerpo el siguiente JSON:
+  #### Esta petición se utilizará para registrar un nuevo usuario y debe enviar como cuerpo el siguiente JSON:
   
 ```javascript
 
@@ -32,7 +32,7 @@
   #### Retornará otro JSON con el codigo de respuesta y un mensaje.
   
   ### -POST /api/users/login
-  #### Esta petición se utilizara para validar un nuevo usuario y debe enviar como cuerpo el siguiente JSON:
+  #### Esta petición se utilizará para validar un nuevo usuario y debe enviar como cuerpo el siguiente JSON:
 ```javascript
 
 {
